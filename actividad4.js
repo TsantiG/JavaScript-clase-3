@@ -29,3 +29,54 @@ const circulo = new FiguraGeometrica("Circulo", "Rojo");
 console.log(circulo.obtenerNombre());
 
 console.log(circulo.obtenerColor());
+
+
+class Circulo extends FiguraGeometrica{
+
+    #radio;
+
+    constructor(nombre, color, radio){
+        super(nombre, color);
+        this.establecerRadio(radio);
+    }
+
+    establecerRadio(radio){
+        this.#radio = radio;
+    }
+
+
+
+}
+
+
+class Truangulo extends FiguraGeometrica{
+
+    #radio;
+
+    constructor(nombre, color, radio){
+        super(nombre, color);
+        this.establecerRadio(radio);
+    }
+
+    establecerRadio(radio){
+        this.#radio = radio;
+    }
+
+
+}
+
+class Cuadrado extends FiguraGeometrica{
+    
+    #radio;
+
+    constructor(nombre, color, radio){
+        super(nombre, color);
+        this.establecerRadio(radio);
+    }
+
+    establecerRadio(radio){
+        this.#radio = radio;
+    }
+
+
+}

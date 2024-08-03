@@ -5,7 +5,7 @@ class Estudiante extends Persona {
 
     constructor(nombre, edad, fechaNacimiento, grado){
         super(nombre, edad, fechaNacimiento); // acuerdate que este es lo que se hereda.
-        this.#grado = grado;
+        this.establecerGrado(grado);
     }
 
 
