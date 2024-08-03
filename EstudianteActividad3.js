@@ -10,6 +10,7 @@ class Estudiante extends Trabajador {
     #grado; 
 
     constructor(nombre, grado){
+        super();
         this.establecerNombre(nombre)
         this.establecerGrado(grado);
     }
