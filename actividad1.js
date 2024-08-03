@@ -1,4 +1,4 @@
-class persona{
+class Persona{
     #nombre = '';
     #edad = 0;
     #fechaNacimiento;
@@ -20,7 +20,7 @@ class persona{
         }
     }
 
-    obtenernombre(){
+    obtenerNombre(){
         return this.#nombre;
     }
 
@@ -49,11 +49,13 @@ class persona{
 
 }
 
-const santi = new persona("santiago", 23, "2001-04-17");
-console.log(santi.obtenernombre());
+const santi = new Persona("santiago", 23, "2001-04-17");
+console.log(santi.obtenerNombre());
 
 console.log(santi.obtenerEdad());
 
 console.log(santi.obtenerFechaNacimiento());
 
 console.log(santi.calcularAñoNacimiento());
+
+module.exports = Persona;
