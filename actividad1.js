@@ -41,6 +41,11 @@ class persona{
         return this.#fechaNacimiento;
     }
 
+    calcularAñoNacimiento(){
+        const añoActual = new Date().getFullYear();
+        return añoActual - this.#edad;
+    }
+
 
 }
 
@@ -50,3 +55,5 @@ console.log(santi.obtenernombre());
 console.log(santi.obtenerEdad());
 
 console.log(santi.obtenerFechaNacimiento());
+
+console.log(santi.calcularAñoNacimiento());
