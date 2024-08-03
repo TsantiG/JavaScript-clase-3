@@ -28,3 +28,4 @@ const santiago = new Estudiante("santi", 17, "2001-04-17", "Avanzado");
 console.log(santiago.obtenerGrado());
 
 console.log(santiago.toString());
+
