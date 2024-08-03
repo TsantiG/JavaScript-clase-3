@@ -17,6 +17,9 @@ class Estudiante extends Persona {
         return this.#grado;
     }
     
+    toString() {
+        return `Nombre: ${this.obtenerNombre()}, Edad: ${this.obtenerEdad()}, Fecha de Nacimiento: ${this.obtenerFechaNacimiento()}, Grado: ${this.#grado}`;
+    }
 
 }
 
@@ -24,3 +27,4 @@ const santiago = new Estudiante("santi", 17, "2001-04-17", "Avanzado");
 
 console.log(santiago.obtenerGrado());
 
+console.log(santiago.toString());
