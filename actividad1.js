@@ -6,10 +6,10 @@ class persona{
     /* paque no se te olvide, los metodos de restrincion se ejecutan en el constructor para evaluar los datos del objeto que se va a agregar.
     y se hace otro metodo para obtener o mostrar  el dato de salida */
 
-    constructor(nombre, edad){
+    constructor(nombre, edad, fechaNacimiento){
         this.establecerNombre(nombre);
         this.establecerEdad(edad);
-        // this.establecerFechaNacimiento(fechaNacimiento);
+        this.#fechaNacimiento = fechaNacimiento;
     }
 
     establecerNombre(nombre){
@@ -37,9 +37,16 @@ class persona{
     }
 
 
+    obtenerFechaNacimiento(){
+        return this.#fechaNacimiento;
+    }
+
+
 }
 
-const santi = new persona("santiago", 23);
+const santi = new persona("santiago", 23, "2001-04-17");
 console.log(santi.obtenernombre());
 
 console.log(santi.obtenerEdad());
+
+console.log(santi.obtenerFechaNacimiento());
