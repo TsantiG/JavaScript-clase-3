@@ -12,11 +12,29 @@ class Empleado extends Trabajador{
     #numEmpleado;
 
     constructor(nombre, apellido, salario, numEmpleado){
+        super();
         this.#nombre = nombre;
         this.#apellido = apellido;
         this.#salario = salario;
         this.#numEmpleado = numEmpleado;
     }
+
+    obtenerNombre(){
+        return this.#nombre;
+    }
+
+    obtenerApellido(){
+        return this.#apellido;
+    }
+
+    obtenerSalario(){
+        return this.#salario;
+    }
+
+    obtenerNumEmpleado(){
+        return this.#numEmpleado;
+    }
+
 
 
 }
@@ -34,9 +52,19 @@ class Gerente extends Empleado{
     }
 
 
+    calcularSalario(){
+        
+        return this.obtenerSalario()+this.#bono;
+    }
 
+    obtenerTodo(){
+        return `El gerente ${this.obtenerNombre()} con salario base de ${this.obtenerSalario()} recive un pago total de ${this.calcularSalario()} por el bono con la cantidad de ${this.obtenerBono()}`
+    }
 
 }
+
+const felipe = new Gerente("felipe", "Perez", 30, 1, 35);
+console.log(felipe.obtenerTodo());
 
 
 class Vendedor extends Empleado{
