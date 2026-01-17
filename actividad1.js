@@ -32,6 +32,16 @@ class Persona{
         }
     }
 
+    // opcion mejorada para evitar decimales:
+    // establecerEdad(edad){
+    //     if (Number.isInteger(edad) && edad > 0){
+    //         this.#edad = edad;
+    //     } else {
+    //         console.log("Edad inválida");
+    //     }
+    // }
+
+
     obtenerEdad(){
         return this.#edad;
     }
