@@ -1,4 +1,5 @@
-const Persona = require('./actividad1'); // no podia importar, mejor usar esto.
+const Persona = require('./actividad1'); // no podia importar, mejor usar esto. nota(no podia importar por que no puse el module en el package.json 
+//y por lo tanto solo podia usar la forma base que tiene node.js para exportar y importar.
 
 class Estudiante extends Persona {
     #grado; 
